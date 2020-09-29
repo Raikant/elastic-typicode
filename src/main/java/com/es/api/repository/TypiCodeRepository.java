@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 import com.es.api.model.TypiUser;
 
 @Repository
-public interface TypiCodeRepository extends ElasticsearchRepository<TypiUser, Long> {
+public interface TypiCodeRepository extends ElasticsearchRepository<TypiUser, String> {
 
 	List<TypiUser> findByTitle(String title);
 
